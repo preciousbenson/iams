@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style/font-awesome-4.7.0/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">
+			<span><h1 id="head">ONLINE APPLICATION</h1></span>
+		</div>
+
+		<div class="div3">
+			<form class="form-group" method="POST" action="Application.php">
+
+				<span><i><h3 class="heading">None Staff</h3><i></span><hr>
+
+				<span><input type="text" name="email" class="form-control" id="name" required="" autocomplete="off" spellcheck="off">
+				<label for="name">E-mail</label></span>
+
+				<span><input type="password" name="password" class="form-control" id="viewPswd" required="" autocomplete="off"><label for="name">Password</label><button onclick="toogleView()" id="btn2" type="button" class="pass fa fa-eye"></button></span>
+
+				<span>
+					<button type="submit" name="login" id="btn1">Log in</button>
+				</span>
+
+				<p>Dont have an account? <a href="Registration.html">Create an Account</a></p>
+
+			</form>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/custom.js"></script>
+	<script type="text/javascript" src="javascript/showpass.js"></script>
+	
+	<script type="text/javascript">
+		let btt = document.getElementById("back-to-top"), 
+			body = document.body, 
+			docElem = document.documentElement,
+			offset = 100,
+			scrollPosition, docHeight;
+
+		//calculate doc height
+		docHeight = Math.max(body.scrolHeight, body.offsetHeight, docElem.clientHeight, docElem.scrolHeight, docElem.offsetHeight);
+
+		if (docHeight != 'undefined') {
+			// statement
+			offset = docHeight / 4;
+		} 
+
+		//add scroll event listener
+		window.addEventListener("scroll", function (event) {
+			/* body... */
+			scrollPos = body.scrollTop || doc.scrollTop;
+
+			btt.className = (scrollPos > offset) ? 'visible' : ""
+		});
+	</script>
+</html>

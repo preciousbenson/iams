@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>bema home 2</title>
+	<!-- <link rel="stylesheet" type="text/css"
+		href="file:///C:/xampp/htdocs/train/bootstrap-4.4.1-dist/css/bootstrap.min.css"> -->
+	<!--font awesome-->
+	<script src="https://kit.fontawesome.com/1fa2072d14.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/home1.css">
+	<!-- <link rel="stylesheet" type="text/css" href="file:///C:/xampp/htdocs/IAS/fontawesome/css/all.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/all.css"> -->
+	<!-- js -->
+	<script src="javascript/home1.js"></script>
+		<script type="text/javascript" src="query.js" ></script>
+</head>
+
+
+<body>
+<div id="menu-bar">
+	<div id="menu" onclick="onClickMenu()">
+<div id="bar1" class="bar"></div>
+<div id="bar2" class="bar"></div>
+<div id="bar3" class="bar"></div>
+
+	</div>
+	<ul class="nav" id="nav">
+	<li><a href="leave.html">LEAVE APPLICATION FORM</a></li>
+    <li><a href="apply.html">ONLINE APPLICATION</a></li>
+    <li><a href="deadyear.html">DEAD YEAR FORM</a></li>
+    <li><a href="request.html">REQUISITION FORM</a></li>
+	<li><a href="">RETAKE FORM</a></li>
+	<li><a href="">GD CLEARANCE FORM</a></li>
+	
+
+
+	</ul>
+</div>
+
+
+	<div class="menu-bg" id="menu-bg"></div>
+	<!-- end of humbarg menu -->
+	
+	<div class="containre-1">
+		<p class="text1"> Simplified </p>
+		<p class="text2">  Applications </p>
+	</div>
+
+<div class="slides">
+	<!-- <img name="slide">	 -->
+		<img name="slide" width="800" height="400">
+
+	<script>
+		var i = 0; //start iritaration
+		var images = []; //list items will be array type
+		var time = 3000; //time per irritaration
+
+		//image list
+		images[0] = 'img/black.jpg';
+		images[1] = 'img/homie.jpg';
+		images[2] = 'img/leave.png';
+		images[2] = 'img/paperless office.jpg';
+
+
+		// change image
+
+		function changeImg() {
+			document.slide.src = images[i];
+
+			if (i < images.length - 1) {
+
+				i++;
+			} else {
+				i = 0;
+			}
+			setTimeout("changeImg()", time);
+		}
+
+		window.onload = changeImg;
+	</script>
+	</div>
+
+
+<div class="container1"> 
+<section id="main1">
+	<h1>welcome</h1>
+	<p>
+The Dean of Students supports the academic and para-academic mission of BSU by assisting students in their Spiritual, academic, social and cultural development through the delivery of a wide range of services
+
+	</p>
+	
+</section>
+<aside id="sidebar1">
+	<p>
+		
+Students welfare is paramount in all BSU endeavors as a Higher Education Institution and this justify the existence of the operating students’ welfare..
+
+	</p>
+</aside>
+
+	</div>
+
+	<!-- footer 2-->
+	 <div class="footer1"> 
+<main>
+	<div class="footer2">
+		<l1>Information</l1>
+		<ul>
+	<li><a href="">  Adimission</a></li>
+    <li><a href="">Fees structure</a></li>
+    <li><a href="">campuses</a></li>
+    <li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="footer2">
+		<l1>About BEMA Systems</l1>
+		<ul>
+			<li><a href="">Adress</a></li>
+			<li><a href="">Contacts</a></li>
+			<li><a href="">Back ground</a></li>
+			<li></li>
+		
+		</ul>
+	</div>
+
+	<div class="footer2">
+		<l1>Imortant Links</l1>
+		<ul>
+			<li><a href="">student welfare</a></li>
+			<li><a href="">jobs and careers</a></li>
+			<li><a href="">webmail</a></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</main>
+
+</div>
+
+
+
+	<div class="copyryt">
+		<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Precious Benson & BEMA All Rights Reserved</p>
+	</div>
+
+
+<!-- js offline -->
+	<script type="text/javascript" src="file:///C:/xampp/htdocs/iams/bootstrap-4.4.1-dist/js/bootstrap.min.js">
+	</script>
+
+</body>
+
+</html>

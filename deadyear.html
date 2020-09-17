@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bema</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dead.css">
+	<link rel="stylesheet" type="text/css" href="style/fontawesome/css/all.css">
+</head>
+<body>
+<div class="log1">
+	<div id="size">
+		<header class="tophead">daed year/semester application form</header>
+	<form id="lineup" method="POST" action="deadyear.php">
+		<div class="name">
+			<label>Enter your name</label>
+			<input type="text" class="lineup" name="name" required="required" placeholder="Enter Full Name">
+
+			</div>	
+		<div class="regno">
+			<label >Enter your Reg.No</label>
+			<input type="text" class="lineup" name="regNo" required="required"placeholder="RegNo eg(../bsu/.../..)">
+		</div>
+		<div class="acess">
+			<label>Enter your Acess No</label>
+			<input type="text" class="lineup" name="accessNo" required="required"placeholder="Enter Acess No">
+		</div>
+		<div class="faculty">
+			<label >Enter your Faculty</label>
+			<input type="text" class="lineup" name="faculty" required="required" placeholder="Enter faculty">
+		</div>
+		<div class="department">
+			<label>Enter your Department</label>
+			<input type="text" class="lineup" name="dept" required="required" placeholder="Enter department">
+		</div>
+		<div class="course">
+			<label>Enter your Course</label>
+			<input type="text" class="lineup" name="course" required="required"autocomplete="on" placeholder="Enter course">
+		</div>
+		<div year>
+			<label>select Year of study</label>
+			<select name="yos" required="">
+				<option disabled selected>--select--</option>
+				<option value="Year 1">Year 1</option>
+				<option value="Year 2">Year 2</option>
+				<option value="Year 3">Year 3</option>
+				<option value="Year 4">Year 4</option>
+			</select>
+		</div>
+		<div class="sem">
+			<label>Enter Current Semester (1 or 2)</label>
+			<input type="text" class="lineup" name="csem" required="required">
+		</div>
+
+		<div class="reason">
+	<label>Enter Reason</label>
+	<textarea name="reason" placeholder="Why apply for daed year or semester"></textarea>
+	
+	</div>
+
+	<div id="select">
+		<label>Select Semester OR Year</label>
+		<select name="deadsem" required="">
+		<option selected disabled>--select--</option>
+		<option value="Dead semester 1">Dead semester 1</option>
+		<option value="Dead semester 3">Dead semester 2</option>
+		<option value="Dead Year 1">Dead Year 1</option>
+		<option value="Dead Year 2"> Dead Year 2</option>
+		<option value="Dead Year 3"> Dead Year 3</option>
+		<option value="Dead Year 4"> Dead Year 4</option>
+	</select>
+	</div>
+	<div class="resume">
+		<label >Select your Resume of studies</label>
+		<!-- <select name="resume" required="">
+		<option selected disabled>--select--</option>
+		<option value="Semester 1">Semester 1</option>
+		<option value="Semester 2">semester 2</option>
+		<option value="Year 1">Year 1</option>
+		<option value="Year 2">Year 2</option>
+		<option value="Year 3">Year 3</option>
+		<option value="Year 4">Year 4</option>
+	</select> -->
+	<input type="date" name="resume" required="required">
+	</div>
+
+<div class="date">
+		<label>Date of Application </label>
+		<input type="date" name="date" required="required">
+	</div>
+	
+	<div class="btn1">
+		<input type="submit" class="sub" name="submit">
+	</div>
+
+	</form>
+</div>
+</div>
+</body>
+</html>
